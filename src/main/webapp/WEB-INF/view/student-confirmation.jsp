@@ -15,9 +15,10 @@
     <title>Title</title>
 </head>
 <body>
-firstname: <strong> ${student.firstName}</strong> <br>
-lastName: <strong> ${student.lastName}</strong> <br>
+Firstname: <strong> ${student.firstName}</strong> <br>
+LastName: <strong> ${student.lastName}</strong> <br>
 Country: <strong> ${student.country}</strong><br>
+Language: <strong>${student.favoriteLanguage}</strong>
 
 </body>
 </html>
