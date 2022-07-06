@@ -1,10 +1,30 @@
 package com.ozerutkualtun.mvc.spring_mvc_recap.model;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 
     private String firstName;
     private String lastName;
     private String country;
+
+    private LinkedHashMap<String, String> optionsForCountry;
+
+    private LinkedHashMap<String, String> optionsForFavoriteLanguage;
+
+    public Student(){
+        this.optionsForCountry = new LinkedHashMap<>();
+        optionsForCountry.put("TR", "Turkey");
+        optionsForCountry.put("FR", "France");
+        optionsForCountry.put("UK", "England");
+
+        this.optionsForFavoriteLanguage = new LinkedHashMap<>();
+        optionsForFavoriteLanguage.put("Java", "Java");
+        optionsForFavoriteLanguage.put("Py3", "Python");
+        optionsForFavoriteLanguage.put("Ruby", "Ruby");
+        optionsForFavoriteLanguage.put("JS", "JavaScript");
+
+    }
 
     public String getFirstName() {
         return firstName;
@@ -28,5 +48,13 @@ public class Student {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public LinkedHashMap<String, String> getOptionsForCountry() {
+        return optionsForCountry;
+    }
+
+    public LinkedHashMap<String, String> getOptionsForFavoriteLanguage() {
+        return optionsForFavoriteLanguage;
     }
 }
