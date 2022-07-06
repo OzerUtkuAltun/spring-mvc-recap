@@ -18,7 +18,15 @@
 Firstname: <strong> ${student.firstName}</strong> <br>
 LastName: <strong> ${student.lastName}</strong> <br>
 Country: <strong> ${student.country}</strong><br>
-Language: <strong>${student.favoriteLanguage}</strong>
+Language: <strong>${student.favoriteLanguage}</strong><br>
+
+OS:
+<ul>
+    <c:forEach var="temp" items="${student.operatingSystems}">
+        <li>${temp}</li>
+    </c:forEach>
+
+</ul>
 
 </body>
 </html>
