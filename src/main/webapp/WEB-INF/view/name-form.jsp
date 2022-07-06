@@ -4,7 +4,7 @@
     <title>Name Form</title>
 </head>
 <body>
-    <form action="processNameForm" method="GET">
+    <form action="/processNameFormFromModel" method="GET">
         <label style="display: block; margin-bottom: 5px">
             Name:
             <input type="text" name="studentName" placeholder="Please enter your name:"/>

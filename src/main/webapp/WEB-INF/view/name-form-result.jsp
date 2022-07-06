@@ -13,6 +13,9 @@
 <body>
 
     Name: ${param.studentName}
+    <br>
+    Message(uppercase): ${message}
+
 
 </body>
 </html>
