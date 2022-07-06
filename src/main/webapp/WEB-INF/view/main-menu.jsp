@@ -35,7 +35,7 @@
         <tr>
             <th id="service-names">Service Name</th>
         </tr>
-        <tr><td><a href="/">Service A</a></td></tr>
+        <tr><td><a href="/nameForm">Name Form</a></td></tr>
         <tr><td><a href="/">Service B</a></td></tr>
         <tr><td><a href="/">Service C</a></td></tr>
     </table>
