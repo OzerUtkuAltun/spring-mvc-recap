@@ -29,15 +29,13 @@
 </style>
 <body>
 
-
-
     <table>
         <tr>
             <th id="service-names">Service Name</th>
         </tr>
         <tr><td><a href="/nameForm">Name Form</a></td></tr>
         <tr><td><a href="/students/show-form">Student Form</a></td></tr>
-        <tr><td><a href="/">Service C</a></td></tr>
+        <tr><td><a href="/customers/show-form">Customer Form</a></td></tr>
     </table>
 
 </body>
