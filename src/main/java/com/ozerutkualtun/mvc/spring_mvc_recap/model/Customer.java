@@ -7,8 +7,8 @@ public class Customer {
 
     private String firstName;
 
-    @NotNull
-    @Size(min = 1, message = "this field is required")
+    @NotNull(message = "This field is required!")
+    @Size(min = 1, message = "this field is required") // şu anda whitespace karakterlerini de okuyor. Ve validasyondan geçiyor. Çözmek için @initbinder kullanılacak. Not: initbinder ilgili controller'a gelen her requestten önce tetiklenir.
     private String lastName;
 
     public String getFirstName() {
