@@ -1,9 +1,6 @@
 package com.ozerutkualtun.mvc.spring_mvc_recap.model;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 public class Customer {
 
@@ -16,6 +13,10 @@ public class Customer {
     @Min(value = 0, message = "Must be greater than or equal to 0")
     @Max(value = 10, message = "Must be less than or equal to 10")
     private Integer freePasses;
+
+    @NotNull(message = "This field is required!")
+    @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "Postal code has to be 5 chars/digits") // only 5 chars/digits
+    private String postalCode;
 
     public String getFirstName() {
         return firstName;
@@ -39,5 +40,13 @@ public class Customer {
 
     public void setFreePasses(Integer freePasses) {
         this.freePasses = freePasses;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
     }
 }
