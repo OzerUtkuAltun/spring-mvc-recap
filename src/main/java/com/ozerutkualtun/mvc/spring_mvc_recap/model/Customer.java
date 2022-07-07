@@ -10,6 +10,7 @@ public class Customer {
     @Size(min = 1, message = "this field is required") // şu anda whitespace karakterlerini de okuyor. Ve validasyondan geçiyor. Çözmek için @initbinder kullanılacak. Not: initbinder ilgili controller'a gelen her requestten önce tetiklenir.
     private String lastName;
 
+    @NotNull(message = "This field is required!") // çalışması için Wrapper classı kullanılmalı (Integer)
     @Min(value = 0, message = "Must be greater than or equal to 0")
     @Max(value = 10, message = "Must be less than or equal to 10")
     private Integer freePasses;
