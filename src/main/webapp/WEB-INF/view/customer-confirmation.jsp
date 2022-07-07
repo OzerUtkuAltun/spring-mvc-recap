@@ -13,7 +13,8 @@
 <body>
     <h2>Customer confirmed!</h2>
     Firstname: ${customer.firstName} <br>
-    Lastname: ${customer.lastName}
+    Lastname: ${customer.lastName} <br>
+    Free Passes: ${customer.freePasses}
 
 </body>
 </html>
